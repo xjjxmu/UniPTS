@@ -1,0 +1,32 @@
+# Architecture
+arch: ResNet50
+
+# ===== Dataset ===== #
+data: /media/MEMORY_DATA/ImageNet
+set: ImageNet
+name: Mask
+
+# ===== Learning Rate Policy ======== #
+optimizer: sgd
+lr: 0.01
+lr_policy: cosine_lr
+warmup_length: 1
+
+# ===== Network training config ===== #
+epochs: 100
+weight_decay: 0.0001 
+momentum: 0.9
+batch_size: 64
+T: 4
+
+# ===== Sparsity =========== #
+prune_rate: 0.9
+conv_type: SparseWeightConv
+bn_type: LearnedBatchNorm
+init: kaiming_normal
+mode: fan_in
+nonlinearity: relu
+beta: 1
+
+# ===== Hardware setup ===== #
+workers: 8

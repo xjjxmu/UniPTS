@@ -1,0 +1,1 @@
+python main.py --config configs/mobilenetv2.yaml --multigpu 0 --checkpoint /path/to/mobilenetv2_1.0-0c6065bc.pth --prune_rate 0.5  
