@@ -18,3 +18,16 @@ Select a configuration file in `configs` to reproduce the experiment results rep
 
 
 Any problem, feel free to contact jingjingxie@stu.xmu.edu.cn
+
+# Citation
+If you find this project useful, please cite our work:
+```
+@InProceedings{Xie_2024_CVPR,
+    author    = {Xie, Jingjing and Zhang, Yuxin and Lin, Mingbao and Cao, Liujuan and Ji, Rongrong},
+    title     = {UniPTS: A Unified Framework for Proficient Post-Training Sparsity},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {5746-5755}
+}
+```
